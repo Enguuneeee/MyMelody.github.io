@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="Content-Type" content="text/html; charset=utf-8" />
+	<title>My Melody</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />	
+</head>
+
+<script>
+    window.onload = function() {
+        alert("🌸 Welcome to My Melody’s world! 🌸");
+    };
+</script>
+
+<script>
+	function melodyGreet() {
+		let name = document.getElementById("usernameInput").value.trim();
+		let messageBox = document.getElementById("greetingMessage");
+	
+		if (name === "") {
+			messageBox.innerHTML = "🌸 Please enter your name, sweetie! 🌸";
+			return;
+		}
+	
+		const greetings = [
+			`🌸 Hi ${name}! My Melody hopes you have the sweetest day ever! 🐰💖`,
+			`✨ Welcome, ${name}! My Melody is happy you're here! ✨`,
+			`💗 ${name}, you're as cute as a strawberry cake! 🍰`,
+			`🐰 My Melody sends you a big pink hug, ${name}! 💞`,
+			`🌷 ${name}, let's make today magical together! 🌷`
+		];
+	
+		let greeting = greetings[Math.floor(Math.random() * greetings.length)];
+	
+		messageBox.innerHTML = greeting;
+	}
+	</script>
+	
+
+<body>
+	<div id="header">
+		<a href="index.html" id="logo"><img src="images/logo.png" alt="My Melody Logo" /></a>
+		<div id="navigation">
+			<ul>
+				<li class="first"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About My Melody</a></li>
+				<li><a href="services.html">Shows</a></li>
+				<li><a href="solutions.html">Friends</a></li>
+				<li><a href="blog.html">Gallery</a></li>
+				<li><a href="https://freewebsitetemplates.com/preview/businesssolutions/index.html" target="_blank">Template</a></li>
+			</ul>
+		</div>
+		
+		<div id="search">
+			<form action="" method="">
+				<input type="text" value="Search My Melody..." class="txtfield" 
+				onblur="if(this.value==''){this.value=this.defaultValue;}" 
+				onfocus="if(this.value==this.defaultValue){this.value='';}" />
+				<input type="submit" value="" class="button" />
+			</form>
+		</div>
+	</div> <!-- /#header -->
+
+	<div id="greetingBox">
+		<input type="text" id="usernameInput" placeholder="Enter your name..." />
+		<button onclick="melodyGreet()">Get a My Melody Greeting ✨</button>
+		<p id="greetingMessage"></p>
+	</div>
+	
+
+	<div id="adbox">
+		<div class="body">
+			<div class="images">
+				<img src="images/cupcake.jpg" alt="My Melody fans" class="preview" />
+				<img src="images/wow.jpg" alt="My Melody moments" height="144" width="230px" />
+				<img src="images/knife.jpg" alt="My Melody shows" height="135" width="230px" class="last" />
+			</div>
+
+			<div class="details">
+				<p>
+					<span>
+						Welcome to a sweet world inspired by My Melody, the pink-hooded bunny who stars in adorable animations and heartwarming stories.
+					</span>
+					Explore her shows, characters, and the magical settings that make her universe so charming.
+				</p>
+			</div>
+		</div>
+
+		<div class="footer">
+			<ul>
+				<li class="selected">
+					<a href="index.html"><img src="images/myMelody.jpg" alt="My Melody moments" /></a>
+					<p>
+						<a href="index.html">Meet My Melody</a><br/>
+						Discover her personality, her gentle nature, and her story from Mariland.
+					</p>
+				</li>
+
+				<li>
+					<a href="index.html"><img src="images/show.jpg" alt="My Melody shows" /></a>
+					<p>
+						<a href="index.html">Shows & Episodes</a><br/>
+						Find out where to watch her animated adventures.
+					</p>
+				</li>
+
+				<li>
+					<a href="index.html"><img src="images/fan.jpg" alt="My Melody fans" /></a>
+					<p>
+						<a href="index.html">Fan Community</a><br/>
+						Share your love for My Melody with fans everywhere.
+					</p>
+				</li>
+			</ul>
+			<span class="bottom-shadow"></span>
+		</div>
+	</div> <!-- /#adbox -->
+
+	<div id="contents">
+		<div class="body">
+			
+			<div id="sidebar">
+				<h3>My Melody News</h3>
+				<ul>
+					<li>
+						New episodes of "Onegai My Melody" remastered in HD.
+						<span>Sept. 21 | by Fan Club <a href="blog.html">8</a></span>
+					</li>
+					<li>
+						Crossover event featuring My Melody and Kuromi announced.
+						<span>Sept. 21 | by Fan Club <a href="blog.html">8</a></span>
+					</li>
+					<li>
+						Special screening of classic My Melody shorts in select theaters.
+						<span>Sept. 21 | by Fan Club <a href="blog.html">8</a></span>
+					</li>
+					<li>
+						Behind-the-scenes interviews with creators of "Onegai My Melody."
+						<span>Sept. 21 | by Fan Club <a href="blog.html">8</a></span>
+					</li>
+					<li>
+						Fan art contest inspired by episodes from My Melody’s shows.
+						<span>Sept. 21 | by Fan Club <a href="blog.html">8</a></span>
+					</li>
+				</ul>
+			</div>
+
+			<div id="main">
+				<span>My Melody appears in multiple adorable animated series filled with friendship, magic, and sweet lessons. This page celebrates her shows and the wonderful world they bring to life.</span>
+				
+				<ul>
+					<li>
+						<a href=""><img src="images/show2.jpg" alt="My Melody shows" /><h3>Onegai My Melody</h3></a>
+						<p>The main animated series featuring My Melody, Kuromi, Baku, and their adventures between Mariland and the human world.</p>
+					</li>
+
+					<li>
+						<a href=""><img src="images/arc.jpg" alt="Episodes" /><h3>Episodes & Story Arcs</h3></a>
+						<p>Explore the different seasons, episode lists, and the evolving story of My Melody and her friends.</p>
+					</li>
+
+					<li>
+						<a href=""><img src="images/cast.jpg" alt="Cast" /><h3>Characters & Cast</h3></a>
+						<p>Meet the main characters from the shows and learn more about their personalities and relationships.</p>
+					</li>
+
+					<li>
+						<a href=""><img src="images/bts.jpg" alt="Behind the scenes" /><h3>Behind the Scenes</h3></a>
+						<p>Discover fun facts, creator notes, animation details, and how the world of My Melody was brought to life.</p>
+					</li>
+				</ul>
+				
+				<p>Visit the <a href="blog.html">Gallery</a> for screenshots, fan edits, and scene highlights from My Melody’s shows.</p>
+			</div>
+		</div>
+	</div> <!-- /#contents -->
+
+	<div id="footer">
+		<ul class="contacts">
+			<h3>Contact Me</h3>
+			<li><span>Email</span><p>: s25224506@al.tiu.ac.jp </p></li>
+		</ul>
+
+		<ul id="connect">
+			<h3>Get the original website</h3>
+			<li><a href="https://freewebsitetemplates.com/preview/businesssolutions/index.html" target="_blank">Template</a></li>
+		</ul>
+
+		<ul id="studentID">
+			<h3>25224506 Enguun Aranzes</h3>
+		</ul>
+
+	</div>
+</body>
+</html>
